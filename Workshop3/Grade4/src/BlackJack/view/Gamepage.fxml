@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" style="-fx-background-color: #296D62;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJack.controller.GameController">
+   <children>
+      <TextArea fx:id="rules" editable="false" layoutX="533.0" layoutY="5.0" prefHeight="68.0" prefWidth="308.0" style="-fx-background-color: black;" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="back" layoutX="6.0" layoutY="5.0" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="play" layoutX="474.0" layoutY="73.0" text="Play" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="stand" layoutX="570.0" layoutY="73.0" text="Stand" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="hit" layoutX="675.0" layoutY="73.0" text="Hit" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="quit" layoutX="760.0" layoutY="73.0" text="Quit" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ScrollPane layoutX="10.0" layoutY="111.0" prefHeight="270.0" prefViewportHeight="250.0" prefViewportWidth="830.0" prefWidth="830.0" style="-fx-background-color: #296D62;">
+         <content>
+            <HBox fx:id="playerCardDisplayer" layoutX="10.0" layoutY="160.0" prefHeight="267.0" prefWidth="828.0" style="-fx-background-color: #296D62;">
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="9.0" layoutY="425.0" prefHeight="264.0" prefViewportHeight="250.0" prefViewportWidth="822.0" prefWidth="830.0" style="-fx-background-color: #296D62;">
+         <content>
+            <HBox fx:id="dealerCardDisplayer" layoutX="10.0" layoutY="444.0" prefHeight="262.0" prefWidth="828.0" style="-fx-background-color: #296D62;" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="player" layoutX="16.0" layoutY="85.0" text="Player (Score: 0)" textFill="YELLOW">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="dealer" layoutX="15.0" layoutY="399.0" text="Dealer (Score: 0)" textFill="YELLOW">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

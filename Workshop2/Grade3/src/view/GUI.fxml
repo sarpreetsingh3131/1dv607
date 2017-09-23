@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GUI">
+   <content>
+      <AnchorPane prefHeight="497.0" prefWidth="798.0">
+         <children>
+            <Text fx:id="welcomeText" fill="#2a306f" layoutX="232.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO MEMBER REGISTERY PROGRAM">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="compactListButton" layoutX="127.0" layoutY="54.0" mnemonicParsing="false" text="Compact List" />
+            <Button fx:id="verboListButton" layoutX="127.0" layoutY="14.0" mnemonicParsing="false" text="Verbose List" />
+            <Button fx:id="createMemberButton" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" text="Create Member" />
+            <AnchorPane layoutX="6.0" layoutY="87.0" prefHeight="391.0" prefWidth="785.0">
+               <children>
+                  <TableView fx:id="memberTable" layoutX="8.0" layoutY="8.0" prefHeight="398.0" prefWidth="761.0">
+                    <columns>
+                      <TableColumn fx:id="memberNameColumn" prefWidth="204.0" text="Name" />
+                      <TableColumn fx:id="memberPersonalnumberColumn" prefWidth="124.0" text="Personal Number" />
+                        <TableColumn fx:id="memberIDColumn" prefWidth="79.0" text="Member ID" />
+                        <TableColumn fx:id="memberTotalBoatsColumn" prefWidth="92.0" text="Total Boats" />
+                        <TableColumn fx:id="memberBoatsInformationColumn" prefWidth="124.0" text="Boats Information" />
+                        <TableColumn fx:id="memberEditColumn" prefWidth="62.0" text="Edit" />
+                        <TableColumn fx:id="memberDeleteColumn" prefWidth="73.0" text="Delete" />
+                    </columns>
+                  </TableView>
+                  <AnchorPane fx:id="boatTablePane" layoutX="102.0" layoutY="14.0" prefHeight="302.0" prefWidth="541.0" visible="false">
+                     <children>
+                        <TableView fx:id="boatTable" layoutX="51.0" prefHeight="256.0" prefWidth="429.0">
+                          <columns>
+                            <TableColumn fx:id="boatLengthColumn" prefWidth="117.0" text="Boat Length" />
+                            <TableColumn fx:id="boatTypeColumn" prefWidth="145.0" text="Boat Type" />
+                              <TableColumn fx:id="boatEditColumn" prefWidth="76.0" text="Edit" />
+                              <TableColumn fx:id="boatDeleteColumn" prefWidth="88.0" text="Delete" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="addBoatButton" layoutX="304.0" layoutY="261.0" mnemonicParsing="false" text="Register Boat" />
+                        <Button fx:id="closeBoatListButton" layoutX="427.0" layoutY="261.0" mnemonicParsing="false" text="Close" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="logInButton" layoutX="6.0" layoutY="54.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="112.0" text="Log In" />
+            <AnchorPane fx:id="searchPane" layoutX="258.0" layoutY="24.0" prefHeight="52.0" prefWidth="382.0">
+               <children>
+                  <TextField fx:id="searchField" layoutX="146.0" layoutY="29.0" prefHeight="27.0" prefWidth="186.0" />
+                  <ChoiceBox fx:id="searchByChoiceBox" layoutX="34.0" layoutY="29.0" prefHeight="27.0" prefWidth="112.0" />
+                  <ChoiceBox fx:id="searchByBoatType" layoutX="145.0" layoutY="29.0" prefHeight="27.0" prefWidth="186.0" />
+                  <Button fx:id="searchButton" layoutX="331.0" layoutY="29.0" mnemonicParsing="false" text="Search" />
+                  <ChoiceBox fx:id="searchByMonth" layoutX="145.0" layoutY="29.0" prefHeight="27.0" prefWidth="186.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="saveAndQuitButton" layoutX="693.0" layoutY="6.0" mnemonicParsing="false" text="Save &amp; Quit" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
